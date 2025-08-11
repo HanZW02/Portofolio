@@ -177,6 +177,34 @@ footer .social-links a:hover {
   color: var(--hover-color);
 }
 
+section#projects {
+  padding: var(--padding-content);
+}
+
+.grid-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+
 @media (max-width: 768px) {
   nav {
     justify-content: center;
@@ -203,4 +231,6 @@ footer .social-links a:hover {
   #contact h2 {
     font-size: 1.5rem;
   }
+
+
 }
